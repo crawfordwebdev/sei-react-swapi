@@ -98,7 +98,7 @@ body {
 
 .starshipdetails-container {
   margin: 20vh auto;
-  padding: 10px 2vw;
+  padding: 1em 2vw;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -107,7 +107,7 @@ body {
   font-size: 1.3rem;
   flex-direction: column;
   width: 40vw;
-  height: 10rem;
+  min-height: 10rem;
   border-radius: var(--basic-border-radius);
 }
 .starshipdetails-container > div {
@@ -118,7 +118,26 @@ body {
   color: var(--fg-color);
   text-transform: uppercase;
 }
+
 .starshipdetails-container > div > span:nth-child(1) {
   padding-right: 10px;
   text-transform: uppercase;
+}
+
+.pilots-container {
+  background-color: rgba(240, 240, 240, .5);
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--basic-border-radius);
+  color: rgba(25, 25, 25, 1);
+}
+
+.pilots-container > div:first-child {
+  color: black;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(25, 25, 25, .75);
+}
+
+div.pilots-container {
+  margin: 1em 0;
 }
