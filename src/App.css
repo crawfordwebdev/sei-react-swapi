@@ -141,3 +141,8 @@ body {
 div.pilots-container {
   margin: 1em 0;
 }
+
+.no-data-container {
+  font-weight: 600;
+  padding: 10px 0;
+}
