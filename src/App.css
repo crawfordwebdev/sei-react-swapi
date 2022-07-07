@@ -1,5 +1,11 @@
+:root {
+  --fg-color: rgb(240, 240, 240);
+  --bg-color: rgb(47, 79, 79);
+  --basic-border-radius: 10px;
+}
+
 html {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 /* The Universal Selector */
@@ -56,8 +62,8 @@ body {
 .title {
   display: flex;
   justify-content: center;
-  background-color: rgb(40, 44, 52);
-  color: rgba(240, 240, 240, 1);
+  background-color: var(--bg-color);
+  color: var(--fg-color);
   font-size: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -77,15 +83,42 @@ body {
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: var(--basic-border-radius);
   display: flex;
   font-size: 2rem;
   color: rgb(232, 236, 236);
   text-decoration: none;
-  background-color: rgb(47, 79, 79);
+  background-color: var(--bg-color);
   min-width: 15vw;
   min-height: 10vw;
   /* border: 2px solid black; */
   margin: 10px;
   padding: 20px;
+}
+
+.starshipdetails-container {
+  margin: 20vh auto;
+  padding: 10px 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  font-size: 1.3rem;
+  flex-direction: column;
+  width: 40vw;
+  height: 10rem;
+  border-radius: var(--basic-border-radius);
+}
+.starshipdetails-container > div {
+  margin: 5px 0;
+}
+
+.starshipdetails-container > div > a {
+  color: var(--fg-color);
+  text-transform: uppercase;
+}
+.starshipdetails-container > div > span:nth-child(1) {
+  padding-right: 10px;
+  text-transform: uppercase;
 }
