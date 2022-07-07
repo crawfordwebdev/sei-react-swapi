@@ -34,22 +34,27 @@ const StarshipPage = () => {
         <div className="starshipdetails-container">
           <div><span>Name:</span><span>{starshipDetails.name}</span></div>
           <div><span>Model:</span><span>{starshipDetails.model}</span></div>
-          <div><Link to='/'>Return</Link></div>
-        </div>
-        {pilots ?
+          {pilots ?
           <>
-          <h3>Pilot List</h3>
-          {pilots.map((pilot, idx) => 
-            <div key={idx}>
-              {pilot.name}
+            <div class="pilots-container">
+              <div>Pilot List: </div>
+              <div class="pilots-list">
+              {pilots.map((pilot, idx) => 
+                <div key={idx}>
+                  {pilot.name}
+                </div>
+              )}
+              </div>
             </div>
-          )}
           </>
         :
           <>
             <p>No Pilots</p>
           </>
         }
+          <div><Link to='/'>Return</Link></div>
+        </div>
+
       </>
       :
       <>
