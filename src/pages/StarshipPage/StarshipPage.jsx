@@ -20,7 +20,6 @@ const StarshipPage = () => {
 
     useEffect(() => {
       const fetchDetails = async () => {
-        // console.log("location.state.starship.pilots", location.state.starship.pilots)
         const pilots = await getPilots(location.state.starship.pilots)
         setPilots(pilots)
       }
