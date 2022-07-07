@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function App() {
   return (
     <>
-      <h1><Link to='/'>Star Wars Starship</Link></h1>
+      <Link to='/' className="title"><h1>Star Wars Starship</h1></Link>
       <Routes>
         <Route path="/" element={<StarshipList />} />
         <Route path="/starship" element={<StarshipPage />} />
